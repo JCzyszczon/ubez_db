@@ -1,0 +1,182 @@
+/* Google Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700;800&display=swap');
+
+*{
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    list-style: none;
+    text-decoration: none;
+    scroll-padding-top: 2rem;
+    scroll-behavior: smooth;
+
+}
+
+:root{
+    --main-color: #004C99;
+    --text-color: #020307;
+    --bg-color: #fff;
+}
+
+html::-webkit-scrollbar{
+    width: 0.5rem;
+    background: var(--text-color);
+
+}
+
+html::-webkit-scrollbar-thumb{
+    background: var(--main-color);
+    border-radius: 5rem;
+}
+
+body{
+    /*background-image: url("img/csm_insurance_952d181a9a_1.png");*/
+    color: var(--bg-color);
+}
+
+.container-main{
+    width: 100%;
+    height: 96%;
+    /*position: relative;*/
+    /*display: flex;*/
+    align-items: center;
+    background: rgb(2,3,7,0.4);
+    border-bottom: 2px solid var(--main-color);
+}
+
+.container-main img{
+    position: absolute;
+    width: 100%;
+    height: 96%;
+    object-fit: cover;
+    object-position: left;
+    z-index: -10000000;
+}
+
+.arrow{
+    font-size: 80px;
+    text-decoration: none;
+    color: var(--main-color);
+    margin-left: 30px;
+    margin-top: 30px;
+    transition: 0.3s all ease-in-out;
+}
+
+.arrow:hover{
+    color: #115DAA;
+}
+
+#container {
+    margin-left: auto;
+    margin-right: auto;
+    position: absolute;
+    width: 500px;
+    height: 500px;
+    left: 37%;
+    top: 20%;
+    padding: 80px 40px 40px;
+    background: rgba(0,0,0,0.7);
+    border-radius: 10px;
+    color: #fff;
+    box-shadow: 0 15px 25px rgba(0,0,0,0.5);
+  }
+
+input[type=text],
+input[type=password]
+{
+    margin-left: 60px;
+	width: 300px;
+	background-color: #333;
+	color: #efefef;
+	border: 2px solid var(--bg-color);
+	border-radius: 5px;
+	font-size: 20px;
+	padding: 10px;
+	box-sizing: border-box;
+	outline: none;
+	margin-top: 30px;
+}
+
+input[type=text]:focus,
+input[type=password]:focus
+{
+	border: 3px solid var(--main-color);
+	background-color: #222;
+	color: var(--main-color);
+}
+
+input[type=submit]
+{
+    margin-left: 60px;
+	width: 300px;
+	background-color: var(--main-color);
+	font-size:20px;
+	color: var(--bg-color);
+	padding: 15px 10px;
+	margin-top: 30px;
+	border: none;
+	border-radius: 5px;
+	cursor: pointer;
+	letter-spacing: 2px;
+	outline: none;
+    transition: 0.2s all ease-in-out;
+}
+
+input[type=submit]:focus
+{
+	-webkit-box-shadow: 0px 0px 15px 5px rgba(204,204,204,0.9);
+	-moz-box-shadow: 0px 0px 15px 5px rgba(204,204,204,0.9);
+	box-shadow: 0px 0px 15px 5px rgba(204,204,204,0.9);
+}
+
+input[type=submit]:hover
+{
+	background-color: #115DAA;
+}
+
+.pas{
+    margin-top: 30px;
+    font-size: 20px;
+}
+
+.pas a{
+    text-decoration: none;
+    color: var(--bg-color);
+}
+
+.pas a:hover{
+    color: var(--main-color);
+    text-decoration: underline;
+}
+
+.rej{
+    font-size: 20px;
+    margin-top: 30px;
+}
+
+.rej a{
+    text-decoration: none;
+    color: var(--main-color);
+}
+
+.rej a:hover{
+    color: var(--bg-color);
+    text-decoration: underline;
+}
+
+.footer{
+    clear:both;
+}
+
+.copyright{
+    padding: 5.5px;
+    background-color: var(--main-color);
+}
+
+.copyright p{
+    font-size: 18px;
+    text-align: center;
+    color: var(--bg-color);
+    background-color: var(--main-color);
+}
